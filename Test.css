@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(40, 45, 45);
+}
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px; 
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.zurag_logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    background: linear-gradient(130deg, #00ff99, #00ffd9, #00ffed);
+    border: 10px solid transparent;
+    background-clip: padding-box, border-box;
+    position: relative;
+    overflow: hidden;
+}
+.logo a {
+    color: white; 
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; /
+}
+.menu li {
+    position: relative;
+    margin-left: 20px; 
+}
+.menu a {
+    display: block; 
+    padding: 4px 10px; 
+    color: rgb(167, 165, 165); 
+    text-decoration: none; 
+    transition: background-color 0.5s; 
+    position: relative;
+    bottom: auto;
+}
+.menu a::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    height: 2px; 
+    background-color: #00ffed; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+.menu a:hover::after,
+.menu a:focus::after {
+    transform: scaleX(1);
+}
+
+
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text1 h1 {
+    box-sizing: border-box;
+    font-size: 47px;
+    color: rgb(255, 255, 255);
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; 
+    margin-bottom: 20px;
+    font-weight: 400;
+    height: 56px;
+    line-height: 57px;
+    margin-bottom: 45px;
+    margin-top: 90px;
+}
+.text1 p {
+    text-align: center; 
+    margin-bottom: 10px; 
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;;
+    font-family: sans-serif;
+    font-size: 21px;
+}
+.style-button {
+    background-color: rgb(67, 75, 75);
+    border-color: rgb(79, 227, 173);
+    color: white;
+    height: 54px;
+    width: 260px;
+    font-size: 16px;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding:15px 30px;;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.style-button:hover {
+    background-color: rgb(98, 113, 113); 
+}
+.text1 .line {
+    height: 60px;
+    background-color: #606060;
+    width: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;    
+}
+.or_view {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+}
+.or_view .eswel {
+    color: grey;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.or_view p {
+    color: white;
+    font-size: 14px;
+    border-bottom: 2px solid rgb(141, 230, 141); 
+    padding-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+    display: block; 
+    transition: background-color 0.5s; 
+    position: relative;
+}
+
+
+
+
+
+
+
+.zurag1 {
+    display: flex;
+    justify-content: center;
+}
+.zurag1 img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin: 10px;
+}
+
+.textud h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.textud p {
+    color: grey;
+}
+
+.features {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+.features h1 {
+    color: rgb(115, 250, 200);
+    font-size: 13px;
+    background-color: rgba(115, 250, 200, 0.258);
+    height: 30px;
+    width: 83px;
+    padding: 12px 12px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Carter One", system-ui;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.features p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.information{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px ;
+    border-bottom: 1px solid black;
+}
+.information .content{
+    width: 1190px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+
+}
+.information .content .group{
+    width: 355px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.information .content .group img{
+    width: 46px;
+    height: 46px;
+}
+.information .content .group .down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.information .content .group .down .title{
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+.information .content .group .down .text{
+    font-size: 18px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.information .content .long{
+    width: 755px;
+    height: 255px;
+    background-color: #224248;
+    grid-area: 4/1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+}
+.information .content .long .left img{
+    width: 376px;
+    height: 202px;
+}
+.information .content .long .right img{
+    width: 46px;
+    height: 46px;
+}
+.information .content .long .right{
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.information .content .long .right .title{
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+.information .content .long .right .text{
+    font-size: 18px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+
+.ui {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: center;
+}
+.beui h1 {
+    color: rgb(115, 250, 200);
+    font-size: 13px;
+    background-color: rgba(115, 250, 200, 0.258);
+    height: 36px;
+    width: 121px;
+    padding: 12px 12px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beui h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Carter One", system-ui;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.beui p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.beui img {
+    margin-top: 130px;
+}
+
+.api {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-direction: row;
+    margin-top: 60px;
+    align-items: center;
+}
+.api h1 {
+    color: rgb(115, 250, 200);
+    font-size: 13px;
+    background-color: rgba(115, 250, 200, 0.258);
+    height: 36px;
+    width: 121px;
+    padding: 12px 12px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.api h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Carter One", system-ui;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.api p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.api img {
+    margin-top: 130px;
+    width: 494px;
+    height: 494px;
+}
+
+.dna {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-direction: row;
+    margin-top: 60px;
+    align-items: center;
+}
+.dnda h1 {
+    color: rgb(115, 250, 200);
+    font-size: 13px;
+    background-color: rgba(115, 250, 200, 0.258);
+    height: 36px;
+    width: 121px;
+    padding: 12px 12px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dnda p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
